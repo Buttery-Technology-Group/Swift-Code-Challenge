@@ -1,5 +1,7 @@
 #  Swift Code Challenge
 
+<img src="https://user-images.githubusercontent.com/26751945/175834226-e738a568-7a90-435d-a007-b24036a0e191.png" width="400" />
+
 Welcome to the **Buttery** Swift code challenge! Please view this as an opportunity to showcase your experience and talent. 
 
 ## The Goal
