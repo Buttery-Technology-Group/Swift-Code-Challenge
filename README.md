@@ -13,7 +13,7 @@ Your goal is to submit finished work as a PR on `main` from your branch. Try to 
 - Add documentation for your code where necessary.
 - Ensure all objects, properties, and methods have clear naming.
 - The app must fetch and display a list of people (users) from this [endpoint](https://randomuser.me). It should display a minimum of 10 people.
-- When a user is tapped from the list, the app should navigate to a detail page and display a user's: name, photo, email, phone number, and address.
+- When a user is tapped from the list, the app should navigate to a detail page and display a user's:
     - name
     - photo
     - email
