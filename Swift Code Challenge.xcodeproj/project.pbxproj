@@ -14,6 +14,7 @@
 		1E05E8E02868F16400B12456 /* Swift_Code_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05E8DF2868F16400B12456 /* Swift_Code_ChallengeTests.swift */; };
 		1E05E8EA2868F16400B12456 /* Swift_Code_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05E8E92868F16400B12456 /* Swift_Code_ChallengeUITests.swift */; };
 		1E05E8EC2868F16400B12456 /* Swift_Code_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05E8EB2868F16400B12456 /* Swift_Code_ChallengeUITestsLaunchTests.swift */; };
+		384EB999286CFC4C00A2FE3C /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB998286CFC4C00A2FE3C /* ApiRequest.swift */; };
 		388650AE286CEF6E009A16EA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388650AD286CEF6E009A16EA /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		1E05E8E92868F16400B12456 /* Swift_Code_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Code_ChallengeUITests.swift; sourceTree = "<group>"; };
 		1E05E8EB2868F16400B12456 /* Swift_Code_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Code_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1E05E8F82868F24600B12456 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		384EB998286CFC4C00A2FE3C /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		388650AD286CEF6E009A16EA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +108,6 @@
 				1E05E8D02868F16300B12456 /* ContentView.swift */,
 				1E05E8D22868F16400B12456 /* Assets.xcassets */,
 				1E05E8D42868F16400B12456 /* Preview Content */,
-				388650AD286CEF6E009A16EA /* UserModel.swift */,
 			);
 			path = "Swift Code Challenge";
 			sourceTree = "<group>";
@@ -139,6 +140,7 @@
 		388650AF286CEF83009A16EA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				388650AD286CEF6E009A16EA /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,6 +162,7 @@
 		388650B2286CEF96009A16EA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				384EB998286CFC4C00A2FE3C /* ApiRequest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			files = (
 				1E05E8D12868F16300B12456 /* ContentView.swift in Sources */,
 				388650AE286CEF6E009A16EA /* UserModel.swift in Sources */,
+				384EB999286CFC4C00A2FE3C /* ApiRequest.swift in Sources */,
 				1E05E8CF2868F16300B12456 /* Swift_Code_ChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
