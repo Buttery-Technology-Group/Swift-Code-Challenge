@@ -14,6 +14,7 @@
 		1E05E8E02868F16400B12456 /* Swift_Code_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05E8DF2868F16400B12456 /* Swift_Code_ChallengeTests.swift */; };
 		1E05E8EA2868F16400B12456 /* Swift_Code_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05E8E92868F16400B12456 /* Swift_Code_ChallengeUITests.swift */; };
 		1E05E8EC2868F16400B12456 /* Swift_Code_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05E8EB2868F16400B12456 /* Swift_Code_ChallengeUITestsLaunchTests.swift */; };
+		388650AE286CEF6E009A16EA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388650AD286CEF6E009A16EA /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		1E05E8E92868F16400B12456 /* Swift_Code_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Code_ChallengeUITests.swift; sourceTree = "<group>"; };
 		1E05E8EB2868F16400B12456 /* Swift_Code_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Code_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1E05E8F82868F24600B12456 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		388650AD286CEF6E009A16EA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +98,15 @@
 		1E05E8CD2868F16300B12456 /* Swift Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				388650B2286CEF96009A16EA /* Services */,
+				388650B1286CEF8F009A16EA /* ViewModels */,
+				388650B0286CEF89009A16EA /* Views */,
+				388650AF286CEF83009A16EA /* Models */,
 				1E05E8CE2868F16300B12456 /* Swift_Code_ChallengeApp.swift */,
 				1E05E8D02868F16300B12456 /* ContentView.swift */,
 				1E05E8D22868F16400B12456 /* Assets.xcassets */,
 				1E05E8D42868F16400B12456 /* Preview Content */,
+				388650AD286CEF6E009A16EA /* UserModel.swift */,
 			);
 			path = "Swift Code Challenge";
 			sourceTree = "<group>";
@@ -127,6 +134,34 @@
 				1E05E8EB2868F16400B12456 /* Swift_Code_ChallengeUITestsLaunchTests.swift */,
 			);
 			path = "Swift Code ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		388650AF286CEF83009A16EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		388650B0286CEF89009A16EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		388650B1286CEF8F009A16EA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		388650B2286CEF96009A16EA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E05E8D12868F16300B12456 /* ContentView.swift in Sources */,
+				388650AE286CEF6E009A16EA /* UserModel.swift in Sources */,
 				1E05E8CF2868F16300B12456 /* Swift_Code_ChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
