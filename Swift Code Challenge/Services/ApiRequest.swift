@@ -50,10 +50,6 @@ struct ApiRequesUser{
                 let thumbnail = picture["thumbnail"] as? String ?? ""
                 let mediumPhoto = picture["large"] as? String ?? ""
                 let idValue = id["value"] as? String ?? ""
-                
-                print(picture)
-                
-                print(thumbnail)
                 let person = Person(id: idValue, firstName: firstName, lastName: lastName, photoThumb: thumbnail, photo: mediumPhoto, email: email, phonenNumber: phoneNumber, address: nameStreet, lat: lat, long: long, city: city, country: country)
                 
                 
