@@ -21,7 +21,6 @@ struct UsersListView: View {
                 List{
                     ForEach(Array(zip(viewModel.personList.indices, viewModel.personList)), id: \.0) {index, user in
                         HStack{
-                            Text("teste")
                             Text("\(user.firstName) \(user.lastName)")
                             
                         }
