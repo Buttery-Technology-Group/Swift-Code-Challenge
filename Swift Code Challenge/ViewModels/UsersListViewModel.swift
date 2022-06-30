@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class UsersListViewModel: ObservableObject {
     @Published var personList: [Person] = []
@@ -18,7 +19,9 @@ class UsersListViewModel: ObservableObject {
         let apiRequest = ApiRequesUser()
         
         apiRequest.requestApi { users in
-            self.personList = users
+            DispatchQueue.main.async {
+                self.personList = users
+            }
         }
     }
 }

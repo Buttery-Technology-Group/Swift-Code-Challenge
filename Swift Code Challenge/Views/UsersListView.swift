@@ -10,6 +10,7 @@ import SwiftUI
 struct UsersListView: View {
     @ObservedObject var viewModel: UsersListViewModel = UsersListViewModel()
     @State private var showDevice = false
+    @State private var selection: Person? = nil
     
     
     var body: some View {
@@ -35,6 +36,8 @@ struct UsersListView: View {
                                 }
                                 .navigationTitle("Users")
                             }
+                            .onDelete(perform: removeRows)
+                            .onMove(perform: move)
                         }
                         .refreshable {
                             viewModel.getPersonList()
@@ -53,10 +56,10 @@ struct UsersListView: View {
                                 }
                             }
                             .padding(.vertical)
-                            
                         }
-                        
-                        
+                    }
+                    .toolbar {
+                        EditButton()
                     }
                     
                     
@@ -86,6 +89,14 @@ struct UsersListView: View {
             }
         }
     }
+    func move(from source: IndexSet, to destination: Int) {
+        viewModel.personList.move(fromOffsets: source, toOffset: destination)
+    }
+    
+    func removeRows(at offsets: IndexSet) {
+        viewModel.personList.remove(atOffsets: offsets)
+    }
+    
 }
 
 struct UsersListView_Previews: PreviewProvider {
