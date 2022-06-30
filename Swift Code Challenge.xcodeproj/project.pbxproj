@@ -17,6 +17,10 @@
 		384EB999286CFC4C00A2FE3C /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB998286CFC4C00A2FE3C /* ApiRequest.swift */; };
 		384EB99B286D00F200A2FE3C /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB99A286D00F200A2FE3C /* UsersListView.swift */; };
 		384EB99D286D011100A2FE3C /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB99C286D011100A2FE3C /* UsersListViewModel.swift */; };
+		384EB99F286DC53A00A2FE3C /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB99E286DC53A00A2FE3C /* UserDetailsView.swift */; };
+		384EB9A1286DC56E00A2FE3C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB9A0286DC56E00A2FE3C /* MapView.swift */; };
+		384EB9A4286DC5BC00A2FE3C /* VisualEffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB9A3286DC5BC00A2FE3C /* VisualEffectsView.swift */; };
+		384EB9A6286DC5EB00A2FE3C /* CircleImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB9A5286DC5EB00A2FE3C /* CircleImageComponent.swift */; };
 		388650AE286CEF6E009A16EA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388650AD286CEF6E009A16EA /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,10 @@
 		384EB998286CFC4C00A2FE3C /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		384EB99A286D00F200A2FE3C /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		384EB99C286D011100A2FE3C /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
+		384EB99E286DC53A00A2FE3C /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		384EB9A0286DC56E00A2FE3C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		384EB9A3286DC5BC00A2FE3C /* VisualEffectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectsView.swift; sourceTree = "<group>"; };
+		384EB9A5286DC5EB00A2FE3C /* CircleImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageComponent.swift; sourceTree = "<group>"; };
 		388650AD286CEF6E009A16EA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +149,14 @@
 			path = "Swift Code ChallengeUITests";
 			sourceTree = "<group>";
 		};
+		384EB9A2286DC59B00A2FE3C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				384EB9A5286DC5EB00A2FE3C /* CircleImageComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		388650AF286CEF83009A16EA /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +168,11 @@
 		388650B0286CEF89009A16EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				384EB9A2286DC59B00A2FE3C /* Components */,
 				384EB99A286D00F200A2FE3C /* UsersListView.swift */,
+				384EB99E286DC53A00A2FE3C /* UserDetailsView.swift */,
+				384EB9A0286DC56E00A2FE3C /* MapView.swift */,
+				384EB9A3286DC5BC00A2FE3C /* VisualEffectsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -303,6 +323,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384EB9A4286DC5BC00A2FE3C /* VisualEffectsView.swift in Sources */,
+				384EB99F286DC53A00A2FE3C /* UserDetailsView.swift in Sources */,
+				384EB9A1286DC56E00A2FE3C /* MapView.swift in Sources */,
+				384EB9A6286DC5EB00A2FE3C /* CircleImageComponent.swift in Sources */,
 				1E05E8D12868F16300B12456 /* ContentView.swift in Sources */,
 				384EB99D286D011100A2FE3C /* UsersListViewModel.swift in Sources */,
 				388650AE286CEF6E009A16EA /* UserModel.swift in Sources */,
