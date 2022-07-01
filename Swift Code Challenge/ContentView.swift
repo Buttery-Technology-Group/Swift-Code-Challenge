@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel: UsersListViewModelAsync = UsersListViewModelAsync()
+    
     var body: some View {
         UsersListView()
     }

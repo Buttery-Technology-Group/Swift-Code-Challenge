@@ -14,14 +14,15 @@
 		1E05E8E02868F16400B12456 /* Swift_Code_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05E8DF2868F16400B12456 /* Swift_Code_ChallengeTests.swift */; };
 		1E05E8EA2868F16400B12456 /* Swift_Code_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05E8E92868F16400B12456 /* Swift_Code_ChallengeUITests.swift */; };
 		1E05E8EC2868F16400B12456 /* Swift_Code_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05E8EB2868F16400B12456 /* Swift_Code_ChallengeUITestsLaunchTests.swift */; };
-		384EB999286CFC4C00A2FE3C /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB998286CFC4C00A2FE3C /* ApiRequest.swift */; };
 		384EB99B286D00F200A2FE3C /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB99A286D00F200A2FE3C /* UsersListView.swift */; };
-		384EB99D286D011100A2FE3C /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB99C286D011100A2FE3C /* UsersListViewModel.swift */; };
 		384EB99F286DC53A00A2FE3C /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB99E286DC53A00A2FE3C /* UserDetailsView.swift */; };
 		384EB9A1286DC56E00A2FE3C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB9A0286DC56E00A2FE3C /* MapView.swift */; };
 		384EB9A4286DC5BC00A2FE3C /* VisualEffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB9A3286DC5BC00A2FE3C /* VisualEffectsView.swift */; };
 		384EB9A6286DC5EB00A2FE3C /* CircleImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB9A5286DC5EB00A2FE3C /* CircleImageComponent.swift */; };
 		388650AE286CEF6E009A16EA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388650AD286CEF6E009A16EA /* UserModel.swift */; };
+		3889CF77286E2EC00047D955 /* ApiRequestAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889CF76286E2EC00047D955 /* ApiRequestAsync.swift */; };
+		3889CF79286E2FE80047D955 /* UsersListViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889CF78286E2FE80047D955 /* UsersListViewModelAsync.swift */; };
+		3889CF7B286E31BA0047D955 /* TestAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889CF7A286E31BA0047D955 /* TestAsync.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,15 +54,16 @@
 		1E05E8E92868F16400B12456 /* Swift_Code_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Code_ChallengeUITests.swift; sourceTree = "<group>"; };
 		1E05E8EB2868F16400B12456 /* Swift_Code_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Code_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1E05E8F82868F24600B12456 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		384EB998286CFC4C00A2FE3C /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		384EB99A286D00F200A2FE3C /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
-		384EB99C286D011100A2FE3C /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
 		384EB99E286DC53A00A2FE3C /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		384EB9A0286DC56E00A2FE3C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		384EB9A3286DC5BC00A2FE3C /* VisualEffectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectsView.swift; sourceTree = "<group>"; };
 		384EB9A5286DC5EB00A2FE3C /* CircleImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageComponent.swift; sourceTree = "<group>"; };
 		384EB9A7286DCA4C00A2FE3C /* Swift-Code-Challenge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Swift-Code-Challenge-Info.plist"; sourceTree = SOURCE_ROOT; };
 		388650AD286CEF6E009A16EA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		3889CF76286E2EC00047D955 /* ApiRequestAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestAsync.swift; sourceTree = "<group>"; };
+		3889CF78286E2FE80047D955 /* UsersListViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModelAsync.swift; sourceTree = "<group>"; };
+		3889CF7A286E31BA0047D955 /* TestAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAsync.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				384EB99E286DC53A00A2FE3C /* UserDetailsView.swift */,
 				384EB9A0286DC56E00A2FE3C /* MapView.swift */,
 				384EB9A3286DC5BC00A2FE3C /* VisualEffectsView.swift */,
+				3889CF7A286E31BA0047D955 /* TestAsync.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,7 +185,7 @@
 		388650B1286CEF8F009A16EA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				384EB99C286D011100A2FE3C /* UsersListViewModel.swift */,
+				3889CF78286E2FE80047D955 /* UsersListViewModelAsync.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -190,7 +193,7 @@
 		388650B2286CEF96009A16EA /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				384EB998286CFC4C00A2FE3C /* ApiRequest.swift */,
+				3889CF76286E2EC00047D955 /* ApiRequestAsync.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -330,10 +333,11 @@
 				384EB9A1286DC56E00A2FE3C /* MapView.swift in Sources */,
 				384EB9A6286DC5EB00A2FE3C /* CircleImageComponent.swift in Sources */,
 				1E05E8D12868F16300B12456 /* ContentView.swift in Sources */,
-				384EB99D286D011100A2FE3C /* UsersListViewModel.swift in Sources */,
+				3889CF77286E2EC00047D955 /* ApiRequestAsync.swift in Sources */,
 				388650AE286CEF6E009A16EA /* UserModel.swift in Sources */,
+				3889CF79286E2FE80047D955 /* UsersListViewModelAsync.swift in Sources */,
 				384EB99B286D00F200A2FE3C /* UsersListView.swift in Sources */,
-				384EB999286CFC4C00A2FE3C /* ApiRequest.swift in Sources */,
+				3889CF7B286E31BA0047D955 /* TestAsync.swift in Sources */,
 				1E05E8CF2868F16300B12456 /* Swift_Code_ChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

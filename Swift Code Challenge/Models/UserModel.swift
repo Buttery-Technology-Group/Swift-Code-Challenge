@@ -7,17 +7,46 @@
 
 import Foundation
 
-struct Person: Identifiable, Equatable{
-    let id: String
-    let firstName: String
-    let lastName: String
-    let photoThumb: String
-    let photo: String
+struct ID: Equatable, Hashable, Decodable {
+    let value: String?
+}
+
+struct Name: Equatable, Decodable {
+    let first: String?
+    let last: String?
+}
+
+struct Picture: Equatable, Decodable{
+    let large: String?
+    let medium: String?
+    let thumbnail: String?
+}
+
+struct coordinates: Equatable, Decodable{
+    let latitude: String?
+    let longitude: String?
+}
+
+struct location: Equatable, Decodable{
+    let street: street?
+    let city: String?
+    let state: String?
+    let country: String?
+    let coordinates: coordinates?
+}
+
+struct street: Equatable, Decodable{
+    let number: Int?
+    let name: String?
+}
+
+
+struct Person: Identifiable, Equatable, Decodable {
+    let id: ID
+    let name: Name
+    let picture: Picture
     let email: String
-    let phonenNumber: String
-    let address: String
-    let lat: String
-    let long: String
-    let city: String
-    let country: String
+    let phone: String
+    let location: location
+    
 }

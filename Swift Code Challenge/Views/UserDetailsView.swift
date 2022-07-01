@@ -12,11 +12,11 @@ struct UserDetailsView: View {
     @State var user: Person
     var body: some View {
         VStack{
-            MapView(lat: user.lat, long: user.long)
+            MapView(lat: user.location.coordinates?.latitude, long: user.location.coordinates?.latitude)
                 .frame(height: 200)
                 .ignoresSafeArea(edges: .top)
             VStack{
-                CircleImage(userImage: user.photo)
+                CircleImage(userImage: user.picture.large ?? "")
                 
                 contentBody(user: user)
             }
@@ -46,11 +46,11 @@ struct UserDetailsView: View {
     }
 }
 
-struct UserDetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserDetailsView(user: Person(id: "12312", firstName: "Luiz", lastName: "Mello", photoThumb: "https://randomuser.me/api/portraits/men/75.jpg", photo: "https://randomuser.me/api/portraits/men/75.jpg", email: "contato@luizmello.dev", phonenNumber: "999999999", address: "Ferreira Viana", lat: "40.066572", long: "-76.339166", city: "Porto Alegre", country: "Brazil"))
-    }
-}
+//struct UserDetailsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UserDetailsView(user: Person(id: "12312", firstName: "Luiz", lastName: "Mello", photoThumb: "https://randomuser.me/api/portraits/men/75.jpg", photo: "https://randomuser.me/api/portraits/men/75.jpg", email: "contato@luizmello.dev", phonenNumber: "999999999", address: "Ferreira Viana", lat: "40.066572", long: "-76.339166", city: "Porto Alegre", country: "Brazil"))
+//    }
+//}
 
 struct contentBody: View {
     @State var result: Result<MFMailComposeResult, Error>? = nil
@@ -59,14 +59,14 @@ struct contentBody: View {
     
     var body: some View {
         VStack(spacing: 5) {
-            Text("\(user.firstName) \(user.lastName)")
+            Text("\(user.name.first ?? "Luiz") \(user.name.last ?? "Mello")")
                 .bold()
                 .font(.title)
             HStack() {
-                Text("\(user.address),")
+                Text("\(user.location.street?.name ?? "SADSAD"),")
                     .font(.body)
                     .foregroundColor(.secondary)
-                Text("\(user.city) - \(user.country)")
+                Text("\(user.location.city ?? "asdsad") - \(user.location.country ?? "asdad")")
                     .font(.body)
                     .bold()
                     .foregroundColor(.secondary)
@@ -99,7 +99,7 @@ struct contentBody: View {
                 let dash = CharacterSet(charactersIn: "-")
                 
                 let cleanString =
-                user.phonenNumber.trimmingCharacters(in: dash)
+                user.phone.trimmingCharacters(in: dash)
                 
                 let tel = "tel://"
                 var formattedString = tel + cleanString
@@ -110,7 +110,7 @@ struct contentBody: View {
                 HStack {
                     Image(systemName: "phone")
                         .font(.body)
-                    Text(user.phonenNumber)
+                    Text(user.phone)
                         .fontWeight(.semibold)
                         .font(.body)
                 }
