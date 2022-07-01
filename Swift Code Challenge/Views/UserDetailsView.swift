@@ -30,8 +30,6 @@ struct UserDetailsView: View {
                     openInstagram(instagramHandle: "luizmello.dev")
                 }
                 .padding(.vertical)
-            
-            
         }
     }
     func openInstagram(instagramHandle: String) {
@@ -45,12 +43,6 @@ struct UserDetailsView: View {
         }
     }
 }
-
-//struct UserDetailsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        UserDetailsView(user: Person(id: "12312", firstName: "Luiz", lastName: "Mello", photoThumb: "https://randomuser.me/api/portraits/men/75.jpg", photo: "https://randomuser.me/api/portraits/men/75.jpg", email: "contato@luizmello.dev", phonenNumber: "999999999", address: "Ferreira Viana", lat: "40.066572", long: "-76.339166", city: "Porto Alegre", country: "Brazil"))
-//    }
-//}
 
 struct contentBody: View {
     @State var result: Result<MFMailComposeResult, Error>? = nil
