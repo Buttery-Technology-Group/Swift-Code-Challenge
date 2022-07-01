@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel: UsersListViewModelAsync = UsersListViewModelAsync()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        UsersListView()
     }
 }
 
