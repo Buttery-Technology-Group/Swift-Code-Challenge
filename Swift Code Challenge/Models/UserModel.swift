@@ -7,27 +7,39 @@
 
 import Foundation
 
-struct ID: Equatable, Hashable, Decodable {
+struct PeopleResponse: Codable {
+    let results: [Person]
+    let info: Info
+}
+
+struct Info: Codable {
+    let seed: String
+    let results, page: Int
+    let version: String
+}
+
+
+struct ID: Equatable, Hashable, Decodable, Encodable {
     let value: String?
 }
 
-struct Name: Equatable, Decodable {
+struct Name: Equatable, Decodable, Hashable, Encodable {
     let first: String?
     let last: String?
 }
 
-struct Picture: Equatable, Decodable{
+struct Picture: Equatable, Decodable, Hashable, Encodable {
     let large: String?
     let medium: String?
     let thumbnail: String?
 }
 
-struct coordinates: Equatable, Decodable{
+struct coordinates: Equatable, Decodable, Hashable, Encodable {
     let latitude: String?
     let longitude: String?
 }
 
-struct location: Equatable, Decodable{
+struct location: Equatable, Decodable, Hashable, Encodable {
     let street: street?
     let city: String?
     let state: String?
@@ -35,13 +47,13 @@ struct location: Equatable, Decodable{
     let coordinates: coordinates?
 }
 
-struct street: Equatable, Decodable{
+struct street: Equatable, Decodable, Encodable, Hashable {
     let number: Int?
     let name: String?
 }
 
 
-struct Person: Identifiable, Equatable, Decodable {
+struct Person: Identifiable, Equatable, Decodable, Encodable, Hashable {
     let id: ID
     let name: Name
     let picture: Picture

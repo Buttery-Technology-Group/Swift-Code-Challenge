@@ -8,15 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel: UsersListViewModelAsync = UsersListViewModelAsync()
-    
     var body: some View {
         UsersListView()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

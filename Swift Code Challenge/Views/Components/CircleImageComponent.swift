@@ -12,9 +12,7 @@ struct CircleImage: View {
     var body: some View {
         AsyncImage(url: URL(string: userImage))
             .aspectRatio(contentMode: .fit)
-            .frame(width: 128, height: 128)
             .clipShape(Circle())
-            .overlay(Circle().stroke(Color.gray, lineWidth: 2))
             .shadow(radius: 10)
     }
 }

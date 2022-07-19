@@ -16,13 +16,9 @@
 		1E05E8EC2868F16400B12456 /* Swift_Code_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05E8EB2868F16400B12456 /* Swift_Code_ChallengeUITestsLaunchTests.swift */; };
 		384EB99B286D00F200A2FE3C /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB99A286D00F200A2FE3C /* UsersListView.swift */; };
 		384EB99F286DC53A00A2FE3C /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB99E286DC53A00A2FE3C /* UserDetailsView.swift */; };
-		384EB9A1286DC56E00A2FE3C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB9A0286DC56E00A2FE3C /* MapView.swift */; };
-		384EB9A4286DC5BC00A2FE3C /* VisualEffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB9A3286DC5BC00A2FE3C /* VisualEffectsView.swift */; };
 		384EB9A6286DC5EB00A2FE3C /* CircleImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384EB9A5286DC5EB00A2FE3C /* CircleImageComponent.swift */; };
 		388650AE286CEF6E009A16EA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388650AD286CEF6E009A16EA /* UserModel.swift */; };
-		3889CF77286E2EC00047D955 /* ApiRequestAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889CF76286E2EC00047D955 /* ApiRequestAsync.swift */; };
-		3889CF79286E2FE80047D955 /* UsersListViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889CF78286E2FE80047D955 /* UsersListViewModelAsync.swift */; };
-		3889CF7B286E31BA0047D955 /* TestAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889CF7A286E31BA0047D955 /* TestAsync.swift */; };
+		38FD67102886212B00B15515 /* UsersListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD670F2886212B00B15515 /* UsersListComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,14 +52,10 @@
 		1E05E8F82868F24600B12456 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		384EB99A286D00F200A2FE3C /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		384EB99E286DC53A00A2FE3C /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
-		384EB9A0286DC56E00A2FE3C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		384EB9A3286DC5BC00A2FE3C /* VisualEffectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectsView.swift; sourceTree = "<group>"; };
 		384EB9A5286DC5EB00A2FE3C /* CircleImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageComponent.swift; sourceTree = "<group>"; };
 		384EB9A7286DCA4C00A2FE3C /* Swift-Code-Challenge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Swift-Code-Challenge-Info.plist"; sourceTree = SOURCE_ROOT; };
 		388650AD286CEF6E009A16EA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		3889CF76286E2EC00047D955 /* ApiRequestAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestAsync.swift; sourceTree = "<group>"; };
-		3889CF78286E2FE80047D955 /* UsersListViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModelAsync.swift; sourceTree = "<group>"; };
-		3889CF7A286E31BA0047D955 /* TestAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAsync.swift; sourceTree = "<group>"; };
+		38FD670F2886212B00B15515 /* UsersListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				384EB9A7286DCA4C00A2FE3C /* Swift-Code-Challenge-Info.plist */,
-				388650B2286CEF96009A16EA /* Services */,
-				388650B1286CEF8F009A16EA /* ViewModels */,
 				388650B0286CEF89009A16EA /* Views */,
 				388650AF286CEF83009A16EA /* Models */,
 				1E05E8CE2868F16300B12456 /* Swift_Code_ChallengeApp.swift */,
@@ -157,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				384EB9A5286DC5EB00A2FE3C /* CircleImageComponent.swift */,
+				38FD670F2886212B00B15515 /* UsersListComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -175,27 +166,8 @@
 				384EB9A2286DC59B00A2FE3C /* Components */,
 				384EB99A286D00F200A2FE3C /* UsersListView.swift */,
 				384EB99E286DC53A00A2FE3C /* UserDetailsView.swift */,
-				384EB9A0286DC56E00A2FE3C /* MapView.swift */,
-				384EB9A3286DC5BC00A2FE3C /* VisualEffectsView.swift */,
-				3889CF7A286E31BA0047D955 /* TestAsync.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		388650B1286CEF8F009A16EA /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				3889CF78286E2FE80047D955 /* UsersListViewModelAsync.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		388650B2286CEF96009A16EA /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				3889CF76286E2EC00047D955 /* ApiRequestAsync.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,16 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				384EB9A4286DC5BC00A2FE3C /* VisualEffectsView.swift in Sources */,
 				384EB99F286DC53A00A2FE3C /* UserDetailsView.swift in Sources */,
-				384EB9A1286DC56E00A2FE3C /* MapView.swift in Sources */,
 				384EB9A6286DC5EB00A2FE3C /* CircleImageComponent.swift in Sources */,
 				1E05E8D12868F16300B12456 /* ContentView.swift in Sources */,
-				3889CF77286E2EC00047D955 /* ApiRequestAsync.swift in Sources */,
 				388650AE286CEF6E009A16EA /* UserModel.swift in Sources */,
-				3889CF79286E2FE80047D955 /* UsersListViewModelAsync.swift in Sources */,
 				384EB99B286D00F200A2FE3C /* UsersListView.swift in Sources */,
-				3889CF7B286E31BA0047D955 /* TestAsync.swift in Sources */,
+				38FD67102886212B00B15515 /* UsersListComponent.swift in Sources */,
 				1E05E8CF2868F16300B12456 /* Swift_Code_ChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
